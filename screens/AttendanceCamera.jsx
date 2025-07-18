@@ -42,12 +42,12 @@ function AttendanceCamera() {
   const isWFH = useSelector(selectIsWfh);
   const currentDate = new Date().toISOString();
   const cameraRef = useRef();
-  useEffect(() => {
-    if (photo) {
-      console.log('Captured Photo URI:', photo.uri);
-      console.log('Captured Photo Size:', photo?.width, 'x', photo?.height);
-    }
-  }, [photo]);
+  // useEffect(() => {
+  //   if (photo) {
+  //     console.log('Captured Photo URI:', photo.uri);
+  //     console.log('Captured Photo Size:', photo?.width, 'x', photo?.height);
+  //   }
+  // }, [photo]);
 
   const toggleCameraFacing = () => {
     setFacing(current => (current === 'back' ? 'front' : 'back'));
